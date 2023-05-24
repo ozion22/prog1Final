@@ -1,0 +1,27 @@
+This final project is a plotter for mathematical function, using primarily C as a frontend with the Ncurses library
+
+TO RUN:
+Either, while logged in as the user timsaa, use the alias <plot>
+Or, run the python driver file <./driver>
+
+NOTES:
+Does not support non-functions (in terms of Y)
+Remember to seperate operations with spaces, like such: <x + 2>
+The standard graph mode shows the midpoint of the bounds with a line, where each y corresponds to the same x
+Since most Terminals are wider than they are high, the function will most likely go past the max or min y value, casuing those parts to be unrendered
+To inspect the general charactaristics of the function given the span, use the general mode
+The special points view is highly innaccurate, since that would require algebra on a level C cannot handle, take it with a grain of salt.
+
+IMPORTANT NOTE:
+The general graph view tends to break given extremely large differences in min and max Y, such as functions which involve division over X
+
+
+SAMPLE INPUTS:
+
+Lower bound: -5
+Upper bound: 5
+Function: x^3
+
+Lower bound: -5
+Upper bound: 5
+Function: x^2 + 2
